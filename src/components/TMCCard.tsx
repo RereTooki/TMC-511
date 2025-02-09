@@ -24,7 +24,7 @@ const TMCCard = () => {
     {
       id: 0,
       name: "Item 0",
-      quote: "“Welcome to the TMC 511 study hub!”",
+      quote: "“Welcome to the TMC 511 study hub! new”",
       author: "Rerel'Oluwa Tooki",
       category: "Quote",
       url: "https://www.linkedin.com/in/rerel-oluwa-tooki-cnvp-b53396253/",
