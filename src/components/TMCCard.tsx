@@ -1252,7 +1252,7 @@ const TMCCard = () => {
       quote: "Success is not for the chosen few; it's for those who choose it.",
       author: "Andrew Tate",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?sca_esv=c3edd36493bca03c&q=Success+is+not+for+the+chosen+few;+it%27s+for+those+who+choose+it+andrew+tate&spell=1&sa=X&ved=2ahUKEwju_JTctLeLAxXXR0EAHS0sAdwQBSgAegQIChAB&biw=851&bih=797&dpr=1.13",
     },
     {
       id: 151,
@@ -1260,7 +1260,7 @@ const TMCCard = () => {
       quote: "Success Systems.",
       author: "By: Bishop David Oyedepo",
       category: "Book",
-      url: "https://www.goodreads.com/book/show/success-systems",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 152,
@@ -1268,7 +1268,7 @@ const TMCCard = () => {
       quote: "Success Strategies.",
       author: "By: Bishop David Oyedepo",
       category: "Book",
-      url: "https://www.goodreads.com/book/show/success-strategies",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 153,
@@ -1276,7 +1276,7 @@ const TMCCard = () => {
       quote: "Success Buttons.",
       author: "By: Bishop David Oyedepo",
       category: "Book",
-      url: "https://www.goodreads.com/book/show/success-buttons",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 154,
@@ -1284,7 +1284,7 @@ const TMCCard = () => {
       quote: "God is the author of leadership.",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 155,
@@ -1292,7 +1292,7 @@ const TMCCard = () => {
       quote: "Leadership is taking the lead in meeting the needs of others.",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 156,
@@ -1301,7 +1301,7 @@ const TMCCard = () => {
         "Leadership is not having responsibilities; it is taking responsibilities.",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 157,
@@ -1310,7 +1310,7 @@ const TMCCard = () => {
         "Leadership is not in the titles we wear; it is in the values we bear.",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 158,
@@ -1318,7 +1318,7 @@ const TMCCard = () => {
       quote: "There are no born leaders anywhere; it is fallacy",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 159,
@@ -1326,7 +1326,7 @@ const TMCCard = () => {
       quote: "You cannot be voted into leadership",
       author: "Oydeporian Leadership Template",
       category: "Quote",
-      url: "#",
+      url: "https://www.google.com/search?q=Bishop+David+Oyedepo&oq=bis&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBwgEEAAYjwIyBggFEEUYPDIGCAYQRRg80gEIMTQyMmowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
     },
     {
       id: 160,
