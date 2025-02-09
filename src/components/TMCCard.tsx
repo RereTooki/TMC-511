@@ -1624,7 +1624,7 @@ const TMCCard = () => {
       <div className="bg-dark-blues/80 flex flex-col items-center justify-center min-h-screen">
         <AlertModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         <AlertModal2 isOpen2={isOpen2} onClose={() => setIsOpen2(false)} />
-        <div className="whitespace-nowrap text-[4.5vw] md:text-[3.15vw] lg:text-[2.25vw] text-light-cyans tracking-[1vw] md:tracking-[0.7vw] lg:tracking-normal select-none mb-[2.5vw] flex flex-row w-[85vw] md:w-[75vw] lg:w-[80vw]">
+        <div className="whitespace-nowrap text-[4.5vw] md:text-[3.15vw] lg:text-[2.25vw] text-light-cyans tracking-normal select-none mb-[2.5vw] flex flex-row w-[85vw] md:w-[75vw] lg:w-[80vw]">
           <div className="sborder-2 flex flex-row sml-[36%] md:sml-[39%] lg:sml-[43%] w-[100%] justify-between items-center">
             {/* Toggle Switch */}
             <div className="invisible lg:visible text-[16px] xl">
@@ -1735,7 +1735,7 @@ const TMCCard = () => {
                 </div>
               )}
               <div
-                className="border-2s flex"
+                className="border-2s flex hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
                 data-aos="zoom-out"
                 data-aos-duration="500"
               >
@@ -1747,7 +1747,7 @@ const TMCCard = () => {
                 </button>
               </div>
               <div
-                className="border-2s flex"
+                className="border-2s flex hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
                 data-aos="zoom-out"
                 data-aos-duration="500"
               >
@@ -1843,7 +1843,7 @@ const TMCCard = () => {
           )}
 
           <div
-            className="flex self-end mr-[1.5vw] md:mr-[4.8vw] lg:mr-[3.3vw] hover:scale-[1.1] hover:mr-[4.8vw] hover:md:scale-[1.2] hover:md:mr-[5.8vw] hover:md:mr-[8.1vw] hover:lg:mr-[5.8vw] select-none"
+            className="flex self-end mr-[1.5vw] md:mr-[4.8vw] lg:mr-[3.3vw] hover:scale-[1.04] transition ease-in-out duration-500 delay-10 select-none"
             data-aos="zoom-in"
             data-aos-duration="500"
           >
@@ -1865,7 +1865,10 @@ const TMCCard = () => {
           </div>
 
           <div className="relative top-[5vw] md:top-[3.9vw] lg:top-[2.5vw] select-none flex flex-row gap-[3.5vw] lg:gap-[2vw]">
-            <div className="" title="Previous">
+            <div
+              className="hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+              title="Previous"
+            >
               <button
                 className="bg-[#ffe4c4] w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-[#ffe4c4] cursor-pointer"
                 onClick={handlePrevButtonClick}
@@ -1873,7 +1876,10 @@ const TMCCard = () => {
                 <MdSkipPrevious />
               </button>
             </div>
-            <div className="" title="Next">
+            <div
+              className="hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+              title="Next"
+            >
               <button
                 className="bg-[#ffe4c4] w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-[#ffe4c4] cursor-pointer"
                 onClick={handleNextButtonClick}
@@ -1883,7 +1889,7 @@ const TMCCard = () => {
             </div>
           </div>
         </div>
-        <div className="fixed bottom-0 left-0 ml-[2vw] pb-[1.2vw] text-light-cyans underline-offset-2 nxl:underline-offset-4 md:pb-[1.2vw] text-[2vw] nsm:text-[1.2vw] xl:text-[1vw] select-none">
+        <div className="fixed bottom-0 left-0 ml-[2vw] pb-[1.2vw] text-light-cyans underline-offset-2 nxl:underline-offset-4 md:pb-[1.2vw] text-[2vw] nsm:text-[1.2vw] xl:text-[1vw] select-none hover:scale-[1.04] transition ease-in-out duration-500 delay-10">
           © 2025{" "}
           <a
             href="https://www.linkedin.com/in/rerel-oluwa-tooki-cnvp-b53396253/"
@@ -1915,14 +1921,20 @@ const TMCCard = () => {
             </div>
           )}
 
-          <div onClick={toggleDisplay2} className="cursor-pointer">
+          <div
+            onClick={toggleDisplay2}
+            className="cursor-pointer hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+          >
             <MdApps
               fill="bisque"
               className="w-[6vw] h-[6vw] max-w-[25px] max-h-[25px]"
             />
           </div>
           {!displayTextArea && (
-            <div onClick={toggleDisplay} className="cursor-pointer">
+            <div
+              onClick={toggleDisplay}
+              className="cursor-pointer hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+            >
               <MdOutlineQuestionAnswer
                 fill="bisque"
                 className="w-[6vw] h-[6vw] max-w-[25px] max-h-[25px]"

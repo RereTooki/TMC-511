@@ -36,7 +36,7 @@ const AlertModal: React.FC<AlertModalProps> = ({ isOpen, onClose }) => {
                 <span className="underline underline-offset-4">TMC 511</span>{" "}
               </Dialog.Title>
               <p className="mt-8 text-sm/6 text-gray-500 hover:text-gray-700 shadow rounded-lg p-4">
-                <div className="containers mx-auto sborder-4 border-black max-h-[40vh] soverflow-y-scroll scroll scrollModal overflow-y-scroll">
+                <div className="containers mx-auto sborder-4 border-black max-h-[40vh] soverflow-y-scroll scroll scrollModal overflow-y-scroll pr-2">
                   <p>
                     Hello and welcome to the TMC 511 hub! <br></br> <br></br>{" "}
                     Here, you'll find every scripture, book and quote taught so
