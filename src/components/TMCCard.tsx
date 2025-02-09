@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import "../App.css";
 import { useState, useEffect } from "react";
 import { MdOutlineQuestionAnswer, MdSkipPrevious } from "react-icons/md";
-import { MdOutlineViewQuilt } from "react-icons/md";
+import { MdApps } from "react-icons/md";
+
 import { MdSkipNext } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
 import { RiFilter2Line } from "react-icons/ri";
@@ -26,7 +27,7 @@ const TMCCard = () => {
     {
       id: 0,
       name: "Item 0",
-      quote: "“Welcome to the TMC 511 study hub! new”",
+      quote: "“Welcome to the TMC 511 study hub!”",
       author: "Rerel'Oluwa Tooki",
       category: "Quote",
       url: "https://www.linkedin.com/in/rerel-oluwa-tooki-cnvp-b53396253/",
@@ -1620,11 +1621,11 @@ const TMCCard = () => {
 
   return (
     <>
-      <div className="bg-dark-blues flex flex-col items-center justify-center min-h-screen">
+      <div className="bg-dark-blues/80 flex flex-col items-center justify-center min-h-screen">
         <AlertModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
         <AlertModal2 isOpen2={isOpen2} onClose={() => setIsOpen2(false)} />
-        <div className="whitespace-nowrap text-[4.5vw] md:text-[3.15vw] lg:text-[2.25vw] text-light-cyans tracking-[1vw] md:tracking-[0.7vw] lg:tracking-[0.5vw] select-none mb-[2.5vw] flex flex-row w-[85vw] md:w-[75vw] lg:w-[80vw]">
-          <div className="flex flex-row sml-[36%] md:sml-[39%] lg:sml-[43%] w-[100%] justify-between sborder-2 items-center">
+        <div className="whitespace-nowrap text-[4.5vw] md:text-[3.15vw] lg:text-[2.25vw] text-light-cyans tracking-[1vw] md:tracking-[0.7vw] lg:tracking-normal select-none mb-[2.5vw] flex flex-row w-[85vw] md:w-[75vw] lg:w-[80vw]">
+          <div className="sborder-2 flex flex-row sml-[36%] md:sml-[39%] lg:sml-[43%] w-[100%] justify-between items-center">
             {/* Toggle Switch */}
             <div className="invisible lg:visible text-[16px] xl">
               <Switch
@@ -1652,7 +1653,7 @@ const TMCCard = () => {
               TMC 511
             </div>
             {/* Search input and button */}
-            <div className="flex flex-row gap-[2vw] justify-between pl-[2vw]">
+            <div className="flex flex-row gap-[2vw] justify-between pl-[2vw] sborder-2 items-center h-full">
               {isVisible && (
                 <div className="" data-aos="zoom-in" data-aos-duration="700">
                   <input
@@ -1662,7 +1663,7 @@ const TMCCard = () => {
                     placeholder="Search..."
                     value={searchText}
                     onKeyDown={handleInputKeyPress}
-                    className="w-[100%] relative top-[3px] xl:h-[90%] text-black px-[1.2vw] nxl:px-[0.8vw] pb-[0.2vw] nxl:pb-[0.4vw] nxl:pt-[0.3vw] rounded-md"
+                    className="w-[100%] xl:h-[90%] max-h-[35px] text-black px-[1.2vw] nxl:px-[0.8vw] pb-[0.2vw] nxl:pb-[0.4vw] nxl:pt-[0.3vw] rounded-md"
                     onChange={(e) => setSearchText(e.target.value)}
                   />
                 </div>
@@ -1677,7 +1678,7 @@ const TMCCard = () => {
                     >
                       <button
                         onClick={handleOptionsButtonClick}
-                        className="flex flex-row w-full items-center gap-x-1.5 rounded-md bg-white gap-[2vw] px-[1.2vw] py-[1.5vw] md:py-[0.8vw] lg:py-[0.4vw] xl:py-[0.8vw] nxl:px-3 nxl:py-2 nxl:text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 w-[100%] text-[2.8vw] md:text-[12px] lg:text-[14px] relative top-[0.4vw]"
+                        className="flex flex-row w-full items-center gap-x-1.5 rounded-md bg-white gap-[2vw] px-[1.2vw] py-[1.5vw] md:py-[0.8vw] lg:py-[0.4vw] xl:py-[0.8vw] nxl:px-3 nxl:py-2 nxl:text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 w-[100%] text-[2.8vw] md:text-[12px] lg:text-[14px] max-h-[35px]"
                       >
                         <div className="borsder-2">
                           {optionsBoxText === "ALL"
@@ -1733,18 +1734,26 @@ const TMCCard = () => {
                   )}
                 </div>
               )}
-              <div className="" data-aos="zoom-out" data-aos-duration="500">
+              <div
+                className="border-2s flex"
+                data-aos="zoom-out"
+                data-aos-duration="500"
+              >
                 <button className="h-[100%]" onClick={handleSearchButtonClick}>
                   <IoMdSearch
-                    color="aquamarine"
+                    color="bisque"
                     title="Search for any Book, Quote or Scripture"
                   />
                 </button>
               </div>
-              <div className="" data-aos="zoom-out" data-aos-duration="500">
+              <div
+                className="border-2s flex"
+                data-aos="zoom-out"
+                data-aos-duration="500"
+              >
                 <button className="h-[100%]" onClick={handleFilterButtonClick}>
                   <RiFilter2Line
-                    color="aquamarine"
+                    color="bisque"
                     title="Sort by Books, Quotes or Scriptures"
                   />
                 </button>
@@ -1773,7 +1782,7 @@ const TMCCard = () => {
           </div>
         </div>
         <div
-          className="mb-[5vw] bg-dark-grayish-blues w-[85vw] md:w-[75vw] lg:w-[80vw] mx-[7.5vw] md:mx-[12.5vw] rounded-[1.8vw] flex flex-col items-center justify-center px-[4vw] md:px-[2.8vw] lg:px-[2vw] pt-[6vw] md:pt-[19px] nxl:pt-[35px] text-[5.5vw] md:text-[17px] lg:text-[21px] nxl:text-[28px] xl:text-[37px] leading-snug lg:leading-normal nxl:leading-snug"
+          className="mb-[5vw] bg-dark-grayish-blues/80 w-[85vw] md:w-[75vw] lg:w-[80vw] mx-[7.5vw] md:mx-[12.5vw] rounded-[1.8vw] flex flex-col items-center justify-center px-[4vw] md:px-[2.8vw] lg:px-[2vw] pt-[6vw] md:pt-[19px] nxl:pt-[35px] text-[5.5vw] md:text-[17px] lg:text-[21px] nxl:text-[28px] xl:text-[37px] leading-snug lg:leading-normal nxl:leading-snug"
           data-aos="zoom-in"
           data-aos-duration="500"
         >
@@ -1789,10 +1798,10 @@ const TMCCard = () => {
                   ? "ADVICE"
                   : optionsBoxText.toUpperCase()} */}
               </div>
-              <div className="text-neon-greens underline underline-offset-4 tracking-wider decoration-light-cyans/70">
+              <div className="text-[#ffe4c4] underline underline-offset-4 tracking-wider decoration-light-cyans/70">
                 #{items[currentIndex].id}
               </div>
-              <div className="border-t-[0.2vw] md:border-t-[0.14vw] lg:border-t-[0.1vw] relative top-[2.5vw] md:top-[1.75vw] lg:top-[1.25vw] w-[21.5vw] md:w-[20.3vw] lg:w-[26.7vw] border-neon-greens"></div>
+              <div className="border-t-[0.2vw] md:border-t-[0.14vw] lg:border-t-[0.1vw] relative top-[2.5vw] md:top-[1.75vw] lg:top-[1.25vw] w-[21.5vw] md:w-[20.3vw] lg:w-[26.7vw] border-[#ffe4c4]"></div>
             </div>
           </div>
           {/* Display quotes/all results */}
@@ -1838,7 +1847,7 @@ const TMCCard = () => {
             data-aos="zoom-in"
             data-aos-duration="500"
           >
-            <div className="border-t-[0.2vw] relative top-[2.5vw] md:top-[1.75vw] lg:top-[1.25vw] md:border-t-[0.14vw] lg:border-t-[0.1vw] w-[10vw] md:w-[7vw] lg:w-[5vw] border-neon-greens mr-[1.5vw] md:mr-[1vw]"></div>
+            <div className="border-t-[0.2vw] relative top-[2.5vw] md:top-[1.75vw] lg:top-[1.25vw] md:border-t-[0.14vw] lg:border-t-[0.1vw] w-[10vw] md:w-[7vw] lg:w-[5vw] border-[#ffe4c4] mr-[1.5vw] md:mr-[1vw]"></div>
             {/* Conditionally Blurred Author Name */}
             <div
               className={`text-light-cyans text-[3.5vw] md:text-[2.45vw] lg:text-[1.75vw] underline underline-offset-4 tracking-wider decoration-mid-blue/70 ${
@@ -1858,7 +1867,7 @@ const TMCCard = () => {
           <div className="relative top-[5vw] md:top-[3.9vw] lg:top-[2.5vw] select-none flex flex-row gap-[3.5vw] lg:gap-[2vw]">
             <div className="" title="Previous">
               <button
-                className="bg-neon-greens w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-neon-greens cursor-pointer"
+                className="bg-[#ffe4c4] w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-[#ffe4c4] cursor-pointer"
                 onClick={handlePrevButtonClick}
               >
                 <MdSkipPrevious />
@@ -1866,7 +1875,7 @@ const TMCCard = () => {
             </div>
             <div className="" title="Next">
               <button
-                className="bg-neon-greens w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-neon-greens cursor-pointer"
+                className="bg-[#ffe4c4] w-[12vw] md:w-[7.8vw] lg:w-[5vw] h-[12vw] md:h-[7.8vw] lg:h-[5vw] rounded-full flex flex-col items-center justify-center hover:shadow-[0_0_30px_5px_rgba(0,0,0,0.9)] hover:shadow-[#ffe4c4] cursor-pointer"
                 onClick={handleNextButtonClick}
               >
                 <MdSkipNext />
@@ -1879,7 +1888,7 @@ const TMCCard = () => {
           <a
             href="https://www.linkedin.com/in/rerel-oluwa-tooki-cnvp-b53396253/"
             target="_blank"
-            className="underline text-neon-greens tracking-wide"
+            className="underline text-[#ffe4c4] tracking-wide"
             title="About Rerel'Oluwa Tooki"
           >
             Rerel'Oluwa Tooki
@@ -1898,7 +1907,7 @@ const TMCCard = () => {
               <div className="self-end md:self-auto">
                 <button
                   onClick={sendFeedbackEmail}
-                  className="ml-2 px-4 py-[2px] bg-light-brown text-light-cyans h-full max-h-[25px] text-white rounded-sm md:rounded-md"
+                  className="ml-2 px-4 py-[2px] bg-[#ffe4c4] sborder-4 stext-light-cyans h-full max-h-[25px] text-black rounded-sm md:rounded-md"
                 >
                   Send
                 </button>
@@ -1907,15 +1916,15 @@ const TMCCard = () => {
           )}
 
           <div onClick={toggleDisplay2} className="cursor-pointer">
-            <MdOutlineViewQuilt
-              fill="rgb(255, 254, 237)"
+            <MdApps
+              fill="bisque"
               className="w-[6vw] h-[6vw] max-w-[25px] max-h-[25px]"
             />
           </div>
           {!displayTextArea && (
             <div onClick={toggleDisplay} className="cursor-pointer">
               <MdOutlineQuestionAnswer
-                fill="rgb(255, 254, 237)"
+                fill="bisque"
                 className="w-[6vw] h-[6vw] max-w-[25px] max-h-[25px]"
               />
             </div>
