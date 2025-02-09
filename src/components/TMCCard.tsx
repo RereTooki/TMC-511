@@ -2,12 +2,14 @@ import React, { useRef } from "react";
 import "../App.css";
 import { useState, useEffect } from "react";
 import { MdOutlineQuestionAnswer, MdSkipPrevious } from "react-icons/md";
+import { MdOutlineViewQuilt } from "react-icons/md";
 import { MdSkipNext } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
 import { RiFilter2Line } from "react-icons/ri";
 import { FaChevronDown } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import AlertModal from "./AlertModal";
+import AlertModal2 from "./AlertModal2";
 import { Switch } from "@headlessui/react";
 
 type Item = {
@@ -1604,6 +1606,12 @@ const TMCCard = () => {
 
   /* New Additions */
   const [isOpen, setIsOpen] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(false);
+
+  // Function to toggle display of input field
+  const toggleDisplay2 = () => {
+    setIsOpen2(true);
+  };
 
   useEffect(() => {
     setIsOpen(true);
@@ -1614,6 +1622,7 @@ const TMCCard = () => {
     <>
       <div className="bg-dark-blues flex flex-col items-center justify-center min-h-screen">
         <AlertModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+        <AlertModal2 isOpen2={isOpen2} onClose={() => setIsOpen2(false)} />
         <div className="whitespace-nowrap text-[4.5vw] md:text-[3.15vw] lg:text-[2.25vw] text-light-cyans tracking-[1vw] md:tracking-[0.7vw] lg:tracking-[0.5vw] select-none mb-[2.5vw] flex flex-row w-[85vw] md:w-[75vw] lg:w-[80vw]">
           <div className="flex flex-row sml-[36%] md:sml-[39%] lg:sml-[43%] w-[100%] justify-between sborder-2 items-center">
             {/* Toggle Switch */}
@@ -1876,12 +1885,12 @@ const TMCCard = () => {
             Rerel'Oluwa Tooki
           </a>
         </div>
-        <div className="fixed bottom-0 right-0 mr-[2vw] pb-[1.2vw] text-light-cyans md:underline-offset-2 nxl:underline-offset-4 md:pb-[1.2vw] text-[2vw] nsm:text-[1.2vw] xl:text-[1vw] select-none">
+        <div className="fixed bottom-0 right-0 mr-[2vw] pb-[1.2vw] text-light-cyans md:underline-offset-2 nxl:underline-offset-4 md:pb-[1.2vw] text-[2vw] nsm:text-[1.2vw] xl:text-[1vw] select-none flex sborder-4 gap-4">
           {displayTextArea && (
             <div className="flex flex-col md:flex-row gap-[10px] md:gap-auto">
               <textarea
-                placeholder="Feedback? Suggestions?"
-                className="overflow-y-auto border border-gray-400 px-2 pt-[4px] w-[40vw] max-w-[330px] h-auto max-h-[25px] rounded-md text-black text-[10px]"
+                placeholder="Got A Message?"
+                className="overflow-y-auto border border-gray-400 px-2 pt-[1.5%] xl:pt-[1%] w-[40vw] max-w-[330px] h-auto max-h-[25px] rounded-md text-black text-[10px] "
                 value={feedbackMessage}
                 name="message"
                 onChange={(e) => setFeedbackMessage(e.target.value)}
@@ -1896,6 +1905,13 @@ const TMCCard = () => {
               </div>
             </div>
           )}
+
+          <div onClick={toggleDisplay2} className="cursor-pointer">
+            <MdOutlineViewQuilt
+              fill="rgb(255, 254, 237)"
+              className="w-[6vw] h-[6vw] max-w-[25px] max-h-[25px]"
+            />
+          </div>
           {!displayTextArea && (
             <div onClick={toggleDisplay} className="cursor-pointer">
               <MdOutlineQuestionAnswer

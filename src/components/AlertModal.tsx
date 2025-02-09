@@ -40,13 +40,8 @@ const AlertModal: React.FC<AlertModalProps> = ({ isOpen, onClose }) => {
                   <p>
                     Hello and welcome to the TMC 511 hub! <br></br> <br></br>{" "}
                     Here, you'll find every scripture, book and quote taught so
-                    far this semester. <br></br>
-                    <br></br> Please note that the notes for the 24/25 session
-                    as uploaded on the moodle page stop at id 93. Anything below
-                    that is what was taught last session (23/24).
+                    far this semester. Also, there's now a quiz feature.
                     <br></br>
-                    <br></br>
-                    Also, there's now a quiz feature.<br></br>
                     <br></br>P.S. READ YOUR NOTES TOO<br></br>P.S. Check this
                     out:{" "}
                     <a
@@ -58,7 +53,7 @@ const AlertModal: React.FC<AlertModalProps> = ({ isOpen, onClose }) => {
                       My Portfolio Site
                     </a>
                     <br></br>
-                    <br></br>Thank you!🫶🏾<br></br>~ rere
+                    <br></br>Thank you!<br></br>~ rere
                   </p>
                 </div>
               </p>
