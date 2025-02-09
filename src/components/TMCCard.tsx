@@ -976,15 +976,15 @@ const TMCCard = () => {
       id: 118,
       name: "Item 118",
       quote:
-        "“Find out if it agrees with scriptures - The voice of God will never contradict the scriptures.”",
+        "If he called them gods, unto whom the word of God came, and the scripture cannot be broken",
       author: "John 10:35",
-      category: "Quote",
+      category: "Bible",
       url: "https://www.bible.com/bible/1/jhn.10.35",
     },
     {
       id: 119,
       name: "Item 119",
-      quote: "Peace.",
+      quote: "What Direction Is The Rhema Leading You? - Peace",
       author: "Psalm 85:8",
       category: "Bible",
       url: "https://www.bible.com/bible/1/psa.85.8",
@@ -992,7 +992,7 @@ const TMCCard = () => {
     {
       id: 120,
       name: "Item 120",
-      quote: "Righteousness.",
+      quote: "What Direction Is The Rhema Leading You? - Righteousness.",
       author: "Psalm 23:3",
       category: "Bible",
       url: "https://www.bible.com/bible/1/psa.23.3",
@@ -1000,7 +1000,7 @@ const TMCCard = () => {
     {
       id: 121,
       name: "Item 121",
-      quote: "Devoid of fear.",
+      quote: "What Direction Is The Rhema Leading You? - Devoid of fear.",
       author: "Psalm 23:4; 2 Timothy 1:7",
       category: "Bible",
       url: "https://www.bible.com/bible/1/psa.23.4",
@@ -1008,7 +1008,8 @@ const TMCCard = () => {
     {
       id: 122,
       name: "Item 122",
-      quote: "Witness of the Holy Spirit.",
+      quote:
+        "What Direction Is The Rhema Leading You? - Witness of the Holy Spirit.",
       author: "Romans 8:14-16",
       category: "Bible",
       url: "https://www.bible.com/bible/1/rom.8.14-16",
@@ -1241,9 +1242,9 @@ const TMCCard = () => {
       id: 149,
       name: "Item 149",
       quote: "If you want to achieve success, there cannot be a plan B.",
-      author: "John Patrick",
+      author: "John Patrick Hickey",
       category: "Quote",
-      url: "#",
+      url: "https://www.goodreads.com/quotes/6180085-if-you-want-to-achieve-success-there-cannot-be-a",
     },
     {
       id: 150,
