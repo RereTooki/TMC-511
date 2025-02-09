@@ -1694,11 +1694,11 @@ const TMCCard = () => {
                   </div>{" "}
                   {optionsListIsVisible && (
                     <div
-                      className="absolute right-0 mt-2.5 md:mt-[2.1vw] lg:mt-[1.8vw] min-w-[25vw] lg:min-w-[20vw] xl:min-w-[15vw] rounded-lg bg-white leading-snug nxl:leading-tight text-[5.5vw] md:text-[17px] lg:text-[21px] nxl:text-[24px] xl:text-[26px] text-[#5e5d64] z-30 shadow-2xl border-2 "
+                      className="absolute right-0 mt-2.5 md:mt-[2.1vw] lg:mt-[1.8vw] min-w-[25vw] lg:min-w-[20vw] xl:min-w-[15vw] rounded-lg bg-white leading-snug nxl:leading-tight text-[5.5vw] md:text-[17px] lg:text-[21px] nxl:text-[24px] xl:text-[26px] text-[#5e5d64] z-30 shadow-2xl border-2  "
                       data-aos="zoom-in"
                       data-aos-duration="700"
                     >
-                      <div className="border-t2 hover:text-mid-blue hover:bg-light-brown hover:rounded-md border-light-cyans">
+                      <div className="border-t2 hover:text-light-cyans hover:bg-dark-grayish-blues hover:rounded-md border-light-cyans">
                         <button
                           onClick={handleAllButtonClick}
                           className=" w-full"
@@ -1706,7 +1706,7 @@ const TMCCard = () => {
                           All
                         </button>
                       </div>
-                      <div className="border-t-2 hover:text-mid-blue hover:bg-light-brown hover:rounded-md border-light-cyans">
+                      <div className="border-t-2 hover:text-light-cyans hover:bg-dark-grayish-blues hover:rounded-md border-light-cyans">
                         <button
                           onClick={handleBooksButtonClick}
                           className="w-full"
@@ -1714,7 +1714,7 @@ const TMCCard = () => {
                           Books
                         </button>
                       </div>
-                      <div className="border-t-2 hover:text-mid-blue hover:bg-light-brown hover:rounded-md border-light-cyans">
+                      <div className="border-t-2 hover:text-light-cyans hover:bg-dark-grayish-blues hover:rounded-md border-light-cyans">
                         <button
                           onClick={handleQuotesButtonClick}
                           className=" w-full "
@@ -1722,7 +1722,7 @@ const TMCCard = () => {
                           Quotes
                         </button>
                       </div>
-                      <div className="border-t-2 hover:text-mid-blue hover:bg-light-brown hover:rounded-md border-light-cyans text-[4.8vw] md:text-[17px] lg:text-[19px] nxl:text-[24px] xl:text-[26px]">
+                      <div className="border-t-2 hover:text-light-cyans hover:bg-dark-grayish-blues hover:rounded-md border-light-cyans text-[4.8vw] md:text-[17px] lg:text-[19px] nxl:text-[24px] xl:text-[26px]">
                         <button
                           onClick={handleScripturesButtonClick}
                           className="w-full "
