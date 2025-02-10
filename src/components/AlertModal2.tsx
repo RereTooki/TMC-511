@@ -57,7 +57,7 @@ const AlertModal2: React.FC<AlertModal2Props> = ({ isOpen2, onClose }) => {
                         onClick={handleItemClick}
                         key={index}
                       >
-                        <li className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white hover:scale-[1.03]">
+                        <li className="flex items-center mb-2 list-decimal border-b-2 border-black py-2 border-double hover:bg-gray-500 hover:rounded-lg hover:text-white hover:scale-[1.03] transition ease-in-out duration-500 delay-10 hover:rounded-lg">
                           <img
                             src={project.imgSrc}
                             alt={project.imgAlt}
