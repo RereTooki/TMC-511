@@ -1735,11 +1735,14 @@ const TMCCard = () => {
                 </div>
               )}
               <div
-                className="border-2s flex hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+                className="border-2s flex"
                 data-aos="zoom-out"
                 data-aos-duration="500"
               >
-                <button className="h-[100%]" onClick={handleSearchButtonClick}>
+                <button
+                  className="h-[100%] hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+                  onClick={handleSearchButtonClick}
+                >
                   <IoMdSearch
                     color="bisque"
                     title="Search for any Book, Quote or Scripture"
@@ -1747,11 +1750,14 @@ const TMCCard = () => {
                 </button>
               </div>
               <div
-                className="border-2s flex hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+                className="border-2s flex"
                 data-aos="zoom-out"
                 data-aos-duration="500"
               >
-                <button className="h-[100%]" onClick={handleFilterButtonClick}>
+                <button
+                  className="h-[100%] hover:scale-[1.08] transition ease-in-out duration-500 delay-10"
+                  onClick={handleFilterButtonClick}
+                >
                   <RiFilter2Line
                     color="bisque"
                     title="Sort by Books, Quotes or Scriptures"
@@ -1850,7 +1856,7 @@ const TMCCard = () => {
             <div className="border-t-[0.2vw] relative top-[2.5vw] md:top-[1.75vw] lg:top-[1.25vw] md:border-t-[0.14vw] lg:border-t-[0.1vw] w-[10vw] md:w-[7vw] lg:w-[5vw] border-[#ffe4c4] mr-[1.5vw] md:mr-[1vw]"></div>
             {/* Conditionally Blurred Author Name */}
             <div
-              className={`text-light-cyans text-[3.5vw] md:text-[2.45vw] lg:text-[1.75vw] underline underline-offset-4 tracking-wider decoration-mid-blue/70 ${
+              className={`text-light-cyans text-[3.5vw] md:text-[2.45vw] lg:text-[1.75vw] underline underline-offset-4 tracking-wider decoration-mid-blue/70 hover:scale-[1.04] transition ease-in-out duration-500 delay-10 ${
                 enabled ? "blur-md" : ""
               }`}
             >
